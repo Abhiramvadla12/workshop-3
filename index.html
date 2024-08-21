@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workshop-3</title>
+    <style>
+        .main_container {
+            display: grid;
+            grid-template-columns: repeat(3, 25vw);
+            gap: 2vw;
+            justify-content: center;
+
+        }
+
+        .container-0,
+        .container-1,
+        .container-2,
+        .container-3,
+        .container-4,
+        .container-5,
+        .container-6,
+        .container-7,
+        .container-8 {
+            overflow: hidden;
+            scrollbar-width: none;
+            width: 25vw;
+            height: 45vh;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+            filter: saturate(60%);
+
+        }
+
+        .image {
+            transition: all 2s;
+            height: 45vh;
+            width: 25vw;
+        }
+        .orange{
+            height: 80vh; 
+            background-color: #E2781A;
+            margin-top: -65vh;
+        }
+        @media screen and (max-width:770px){
+            .main_container{
+                grid-template-columns: repeat(2,35vw);
+            }
+            .image{
+                width: 35vw;
+            }
+            .container-0,.container-1,.container-2,.container-3,.container-4,.container-5,.container-6,.container-7,.container-8{
+                width: 35vw;
+            }
+            .orange{
+                height: 180vh;
+                margin-top: -150vh;
+            }
+        }
+        @media screen and (max-width:430px) {
+            .main_container{
+                grid-template-columns: repeat(1,70vw);
+            }
+            .container-0,.container-1,.container-2,.container-3,.container-4,.container-5,.container-6,.container-7,.container-8{
+                width: 70vw;
+            }
+            .image{
+                width: 70vw;
+            }
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./logo-w.png" alt="Bootstrap" style="height: 8vh; width: 8vw;">
+            </a>
+        </div>
+    </nav>
+    <div class="white">
+        <p style="text-align: center; font-size: 3.5em; font-weight: bold; margin-top: 10vh;">
+            Our Products
+        </p>
+        <div class="main_container">
+            <div class="container-0">
+                <img src="./1st.jpg" alt="image"   data-bs-toggle="modal" data-bs-target="#pic-1" class="image">
+                <div class="modal bg-black" id="pic-1">
+                    <div class="modal-dialog modal-centered "> 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./1st.jpg" alt="image" style="height: 50vh; width: 30vw;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-1">
+                <img src="./2nd.jpg" alt="image"  class="image" data-bs-toggle="modal" data-bs-target="#pic-2" >
+                <div class="modal bg-black" id="pic-2">
+                    <div class="modal-dialog modal-centered"> 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./2nd.jpg" alt="image" style="height: 50vh; width: 30vw;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-2">
+                <img src="./3rd.jpg" alt="image"  class="image" data-bs-toggle="modal" data-bs-target="#pic-3">
+                <div class="modal bg-black" id="pic-3">
+                    <div class="modal-dialog modal-centered"> 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./3rd.jpg" alt="image" style="height: 50vh; width: 30vw;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-3">
+                <img src="./4th.jpg" alt="image"  class="image" data-bs-toggle="modal" data-bs-target="#pic-4">
+                <div class="modal bg-black" id="pic-4">
+                    <div class="modal-dialog modal-centered"> 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./4th.jpg" alt="image" style="height: 50vh; width: 30vw;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-4">
+                <img src="./5th.jpg" alt="image"  class="image" data-bs-toggle="modal" data-bs-target="#pic-5">
+                <div class="modal bg-black" id="pic-5">
+                    <div class="modal-dialog modal-centered"> 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./5th.jpg" alt="image" style="height: 50vh; width: 30vw;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-5">
+                <img src="./6th.jpg" alt="image"  class="image" data-bs-toggle="modal" data-bs-target="#pic-6">
+                <div class="modal bg-black" id="pic-6">
+                    <div class="modal-dialog modal-centered"> 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./6th.jpg" alt="image" style="height: 50vh; width: 30vw;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-6">
+                <img src="./7th.jpg" alt="image"  class="image" data-bs-toggle="modal" data-bs-target="#pic-7">
+                <div class="modal bg-black" id="pic-7">
+                    <div class="modal-dialog modal-centered"> 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./7th.jpg" alt="image" style="height: 50vh; width: 30vw;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-7">
+                <img src="./8th.jpg" alt="image"  class="image" data-bs-toggle="modal" data-bs-target="#pic-8">
+                <div class="modal bg-black" id="pic-8">
+                    <div class="modal-dialog modal-centered"> 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./8th.jpg" alt="image" style="height: 50vh; width: 30vw;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-8">
+                <img src="./9th.jpg" alt="image"  class="image" data-bs-toggle="modal" data-bs-target="#pic-9">
+                <div class="modal bg-black" id="pic-9">
+                    <div class="modal-dialog modal-centered"> 
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="./9th.jpg" alt="image" style="height: 50vh; width: 30vw;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="orange" >
+        
+    </div>
+    <div class="black" style="height: 10vh; background-color: #333333;">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
